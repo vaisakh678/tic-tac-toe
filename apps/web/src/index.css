@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.board {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+	border: 2px solid black;
+	padding: 20px;
+}
+
+.cell:nth-child(1) {
+	border-left: 0;
+	border-top: 0;
+}
+.cell:nth-child(2) {
+	border-top: 0;
+}
+.cell:nth-child(3) {
+	border-top: 0;
+	border-right: 0;
+}
+.cell:nth-child(4) {
+	border-left: 0;
+}
+/* .cell:nth-child(5) {
+} */
+.cell:nth-child(6) {
+	border-right: 0;
+}
+.cell:nth-child(7) {
+	border-left: 0;
+	border-bottom: 0;
+}
+.cell:nth-child(8) {
+	border-bottom: 0;
+}
+.cell:nth-child(9) {
+	border-bottom: 0;
+	border-right: 0;
+}
+
